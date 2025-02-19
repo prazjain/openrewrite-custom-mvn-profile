@@ -1,0 +1,11 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.prazjain.openrewrite.maven.AddUnitTestMavenProfile
+displayName: Add a maven profile for unit tests
+description: Add a maven profile for unit tests for projects with standardized poms
+recipeList:
+  - org.openrewrite.maven.AddProfile:
+      id: unit-tests
+      activation: <activation><foo>foo</foo></activation>
+      properties: <properties><foo>foo</foo></properties>
+      build: <build><foo>foo</foo></build>
