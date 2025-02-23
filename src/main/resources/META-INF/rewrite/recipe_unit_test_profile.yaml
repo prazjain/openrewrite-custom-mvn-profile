@@ -8,4 +8,9 @@ recipeList:
       id: unit-tests
       activation: <activation><foo>foo</foo></activation>
       properties: <properties><foo>foo</foo></properties>
-      build: <build><foo>foo</foo></build>
+      build: | 
+       <build>
+       <foo>
+       foo
+       </foo>
+       </build>
